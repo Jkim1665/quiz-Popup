@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="start"> Start Quiz! </div>
+            <div id="quiz" style="display : none;">
+                <!--questions in array-->
+                <div id="question">
+                </div>
+                <!--trivia topic-->
+                <div id="qImg">
+                </div>
+
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                </div>
+
+                <!--Timer will have 3 parts-->
+                <div id="timer">
+                    <!--Number decrementing-->
+                    <div id="counter"></div>
+                    <!--time gauge-->
+                    <div id="btimeGauge"></div>
+                    <!--Time remaining represented in green-->
+                    <div id="timeGauge"></div>
+                </div>
+
+                <!--Progress bar-->
+                <div id="progress"></div>
+                </div>
+
+
+        <!--container for smiley face and generated score-->
+        <div id="scoreContainer" style="display : none;">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
